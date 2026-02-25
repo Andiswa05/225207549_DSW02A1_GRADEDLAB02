@@ -1,0 +1,56 @@
+ body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 0;
+}
+
+div, span {
+  border: 2px solid black;
+  box-sizing: border-box;
+   
+}
+
+body > div {
+  display: flex;
+  flex-direction: column;
+  ;
+}
+
+.id {
+  background: yellow;            
+  width: 100%;
+}
+
+body > div > div:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+   
+}
+
+span.class {
+  font-style: italic;
+}
+
+body > div > div.class {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+   
+   
+}
+
+div.class > .id {
+  background: yellow;
+  align-items: flex-start;
+}
+
+div.class > span {
+  margin-left: auto;
+
+}
+
+ 
+#H {
+  width: 33.33%;          
+ page-orientation: centered-horizontal;
+  text-align: right; 
+}
