@@ -1,55 +1,64 @@
  body {
   font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: medium;  
   margin: 0;
+  padding: 0;
+ }
+ 
+ div, span {
+    border: 2px solid black;
+    box-sizing: border-box;
+     
 }
 
-div, span {
-  border: 2px solid black;
-  box-sizing: border-box;
-   
+div > .id:first-child{
+    background-color: yellow;
+    display: flex;
+   justify-content: left;
 }
 
-body > div {
+div > div:nth-child(2){
+     text-align:right;
+     display: flex;
+    justify-content: flex-end;
+
+}
+
+span.class{
+    font-style: italic;
+}
+
+
+div.class{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+  justify-content: space-between;
+}
+
+div.class > div.id {
+  background-color: yellow;
   display: flex;
-  flex-direction: column;
-}
-
-.id {
-  background: yellow;            
-  width: 100%;
-}
-
-body > div > div:nth-child(2) {
-  display: flex;
-  justify-content: flex-end;
-   
-}
-
-span.class {
-  font-style: italic;
-}
-
-body > div > div.class {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-   
-   
-}
-
-div.class > .id {
-  background: yellow;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
-div.class > span {
-  margin-left: auto;
+div.class > #class {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#H {
+  width: 33.333%;
+  margin: 0 auto;  
+  display: flex;
+  justify-content: flex-end;  
+  align-items: center;
+  padding: 10px;
 
 }
+
 
  
-#H {
-  width: 33.33%;          
- page-orientation: centered-horizontal;
-  text-align: right; 
-}
